@@ -4,17 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Stop Watch</title>
 </head>
 <body>
-    <div class="watch">
-        <h1 id="min">0</h1>
-        <h1 id="sec">0</h1>
-        <h1 id="msec">0</h1>
-
-        <button id="pause" onclick="pause()" disabled>Pause</button>
-        <button id="start" onclick="start()">Start</button>
-        <button id="reset" onclick="reset()" disabled>Reset</button>
+    <div class="main-body">
+        <div class="watch">
+            <div class="time">
+                <div>
+                    <h1 id="min">0</h1>
+                </div>
+                <div>
+                    <h1 id="sec">0</h1>
+                </div>
+                <div>
+                    <h1 id="msec">0</h1>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="pause" onclick="pause()" disabled>Pause</button>
+                <button id="start" onclick="start()">Start</button>
+                <button id="reset" onclick="reset()" disabled>Reset</button>
+            </div>
+        </div>
     </div>
     <script src="./assets/script.js"></script>
 </body>
