@@ -47,6 +47,11 @@ button
     margin: 5px;
 }
 
+button:disabled
+{
+    background: #EE4641;
+}
+
 @media (max-width: 767px)
 {
     .time div 
