@@ -39,7 +39,7 @@ body
 
 button
 {
-    background: #801437;
+    background: #EE4641;
     color: white;
     width: 130px;
     height: 45px;
@@ -49,7 +49,7 @@ button
 
 button:disabled
 {
-    background: #EE4641;
+    background: #801437;
 }
 
 @media (max-width: 767px)

@@ -9,6 +9,8 @@ let sec = 0;
 let msec = 0;
 let interval;
 
+console.log('sec', sec);
+
 function timer()
 {
     msec++
@@ -45,10 +47,13 @@ function pause()
 
 function reset()
 {
+    clearInterval(interval)
+    sec = 0;
+    msec = 0;
+    min = 0;
     msecText.innerHTML = 0;
     secText.innerHTML = 0;
     minText.innerHTML = 0;
-    clearInterval(interval)
     startBtn.disabled = false;
     pauseBtn.disabled = true;
     resetBtn.disabled = true;
